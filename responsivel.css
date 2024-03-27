@@ -1,0 +1,226 @@
+@media screen and (max-width: 414px) {
+  nav {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .maça {
+    margin-left: 25px;
+  }
+  ul {
+    padding: 0;
+  }
+
+  .icon_hamburger {
+    z-index: 2;
+  }
+  #hamburger {
+    display: block;
+    border: none;
+    background: none;
+    border-top: 2px solid #000;
+    cursor: pointer;
+  }
+  #hamburger::before,
+  #hamburger::after {
+    background-color: #000;
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+  }
+  .logo_responsivel {
+    padding: 0;
+  }
+  .palavras {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    z-index: 1;
+    clip-path: circle(100px at 10% -23%);
+    gap: 0;
+    align-items: start;
+    font-weight: bolder;
+    pointer-events: none;
+    font-size: 26px;
+    overflow: hidden;
+  }
+  nav.active > ul {
+    overflow: hidden;
+  }
+
+  .palavras > a {
+    padding: 0 31px;
+  }
+  .palavras_li {
+    flex-direction: column;
+    padding: 21px 0 50px 40px;
+    margin-bottom: 40px;
+  }
+  .palavras_li > li > a {
+    margin: 3px;
+    opacity: 0;
+    font-size: 28px;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .palavras_li li:nth-child(1) a {
+    transition: 0.2s 0.1s;
+  }
+  .palavras_li li:nth-child(2) a {
+    transition: 0.2s 0.3s;
+  }
+  .palavras_li li:nth-child(3) a {
+    transition: 0.4s 0.5s;
+  }
+  .palavras_li li:nth-child(4) a {
+    transition: 0.4s 0.7s;
+  }
+  .palavras_li li:nth-child(5) a {
+    transition: 0.4s 0.9s;
+  }
+  .palavras_li li:nth-child(6) a {
+    transition: 0.4s 1s;
+  }
+  .palavras_li li:nth-child(7) a {
+    transition: 0.4s 1.2s;
+  }
+  .palavras_li li:nth-child(8) a {
+    transition: 0.4s 1.4s;
+  }
+  .palavras_li li:nth-child(9) a {
+    transition: 0.4s 1.6s;
+  }
+  .palavras_li li:nth-child(10) a {
+    transition: 0.4s 1.8s;
+  }
+
+  nav.active .palavras {
+    clip-path: circle(1500px at 10% -23%);
+    pointer-events: all;
+    transition: 0.9s ease-out;
+  }
+  nav.active .palavras_li a {
+    opacity: 1;
+  }
+  nav.active #hamburger {
+    border-top-color: transparent;
+    position: fixed;
+
+    top: 16px;
+    right: 24px;
+  }
+  nav.active #hamburger::before {
+    transform: rotate(45deg) translate(8%, 5%);
+  }
+  nav.active #hamburger::after {
+    transform: rotate(-45deg) translate(21%, -145%);
+  }
+  #produto {
+    display: block;
+  }
+  main {
+    width: 100vw;
+    height: 100vh;
+  }
+  #titulo-produto {
+    margin: auto;
+    text-align: center;
+  }
+  #opcoes-produto {
+    position: relative;
+  }
+  #visualizacao {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 79%);
+  }
+  .precos {
+    margin: 299px 0 0 20px;
+    padding-bottom: 0;
+  }
+  #imagem-visualizacao {
+    width: 200px;
+    height: 100%;
+    margin-top: 20px;
+  }
+  #nome-cor-selecionada {
+    text-align: center;
+  }
+  #selecao-cores {
+    justify-content: center;
+  }
+
+  #selo-carbono {
+    justify-content: center;
+  }
+
+  #info-extra {
+    padding-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #entrega {
+    margin-left: 14px;
+  }
+  #informacoes-entrega {
+    display: flex;
+    gap: 5px;
+  }
+  #comprar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #comprar > #adicionar-a-sacola {
+    width: 316px;
+    height: 56px;
+  }
+
+  #comprar-depois {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+
+  #tamanho-caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #tamanho-caixa > #opcoes-tamanho {
+    width: 80%;
+  }
+  #tamanho-caixa > #opcoes-tamanho > label {
+    flex-basis: 41%;
+    display: flex;
+    margin-left: 15px;
+  }
+}
+ @media screen and (max-width: 320px){
+   #titulo-produto{
+
+    width: 18rem;
+    font-size: 1.7rem;
+   }
+   #imagem-visualizacao {
+    width: 174px;
+    height: 100%;
+    margin-top: 43px;
+  }
+ }
