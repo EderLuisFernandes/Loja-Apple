@@ -212,15 +212,66 @@
     margin-left: 15px;
   }
 }
- @media screen and (max-width: 320px){
-   #titulo-produto{
+@media screen and (max-width: 360px) {
+  #imagem-visualizacao {
+    width: 175px;
+    height: 100%;
+    margin-top: 56px;
+  }
+  #visualizacao {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-41%, 75%);
+  }
+}
 
+@media screen and (max-width: 320px) {
+  #titulo-produto {
     width: 18rem;
     font-size: 1.7rem;
-   }
-   #imagem-visualizacao {
-    width: 174px;
-    height: 100%;
-    margin-top: 43px;
   }
- }
+  #imagem-visualizacao {
+    width: 159px;
+  }
+  #visualizacao {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-45%, 74%);
+  }
+  li {
+    padding: 0 0.5rem 0 0;
+  }
+  #entrega {
+    padding: 1rem 0 0;
+    margin-left: 8px;
+  }
+  #entrega > #icone {
+    display: inline-block;
+    position: none;
+  }
+  #informacoes-entrega {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    width: 42%;
+  }
+  #comprar > #adicionar-a-sacola {
+    width: 268px;
+    height: 56px;
+  }
+
+  #disclaimer {
+    margin-top: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+  }
+  #comprar-depois > p {
+    margin: 0;
+  }
+}
